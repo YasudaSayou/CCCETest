@@ -1,0 +1,22 @@
+{
+  "parent": "candycraftce:craft_fork",
+  "criteria": {
+    "dragibus": {
+      "conditions": {
+        "block": "candycraftce:dragibus_crops"
+      },
+      "trigger": "minecraft:placed_block"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.candycraftce.dragibus.desc"
+    },
+    "icon": {
+      "id": "candycraftce:dragibus"
+    },
+    "title": {
+      "translate": "advancements.candycraftce.dragibus"
+    }
+  }
+}

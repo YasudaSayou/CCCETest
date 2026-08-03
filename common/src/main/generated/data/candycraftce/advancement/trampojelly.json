@@ -1,0 +1,26 @@
+{
+  "parent": "candycraftce:licorice_furnace",
+  "criteria": {
+    "trampojelly": {
+      "conditions": {
+        "items": [
+          {
+            "items": "candycraftce:trampojelly"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.candycraftce.trampojelly.desc"
+    },
+    "icon": {
+      "id": "candycraftce:trampojelly_ore"
+    },
+    "title": {
+      "translate": "advancements.candycraftce.trampojelly"
+    }
+  }
+}
