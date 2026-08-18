@@ -1,5 +1,5 @@
 {
-  "parent": "candycraftce:licorice_furnace",
+  "parent": "candycraftce:craft_licorice_furnace",
   "criteria": {
     "trampojelly": {
       "conditions": {

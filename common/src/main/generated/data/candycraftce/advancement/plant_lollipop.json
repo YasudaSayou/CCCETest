@@ -1,9 +1,14 @@
 {
-  "parent": "candycraftce:dragibus",
+  "parent": "candycraftce:plant_dragibus",
   "criteria": {
     "lollipop": {
       "conditions": {
-        "block": "candycraftce:lollipop_stem"
+        "location": [
+          {
+            "block": "candycraftce:lollipop_stem",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
       },
       "trigger": "minecraft:placed_block"
     }

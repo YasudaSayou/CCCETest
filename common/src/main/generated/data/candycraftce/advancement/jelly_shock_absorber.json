@@ -13,6 +13,7 @@
     }
   },
   "display": {
+    "frame": "goal",
     "description": {
       "translate": "advancements.candycraftce.jelly_shock_absorber.desc"
     },

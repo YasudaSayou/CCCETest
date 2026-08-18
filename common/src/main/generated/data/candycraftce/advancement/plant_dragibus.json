@@ -3,7 +3,12 @@
   "criteria": {
     "dragibus": {
       "conditions": {
-        "block": "candycraftce:dragibus_crops"
+        "location": [
+          {
+            "block": "candycraftce:dragibus_crops",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
       },
       "trigger": "minecraft:placed_block"
     }
