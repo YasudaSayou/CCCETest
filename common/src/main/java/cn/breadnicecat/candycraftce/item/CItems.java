@@ -125,14 +125,14 @@ public class CItems {
 	public static final ItemEntry<Item> RECORD_2 = createRecord("record_2", CJukeboxSound.CD_2).save();
 	public static final ItemEntry<Item> RECORD_3 = createRecord("record_3", CJukeboxSound.CD_3).save();
 	public static final ItemEntry<Item> RECORD_4 = createRecord("record_4", CJukeboxSound.CD_4).save();
-	public static final ItemEntry<Item> GINGERBREAD_EMBLEM = create("gingerbread_emblem").save();
-	public static final ItemEntry<Item> JELLY_EMBLEM = create("jelly_emblem").save();
-	public static final ItemEntry<Item> SKY_EMBLEM = create("sky_emblem").save();
-	public static final ItemEntry<Item> CHEWING_GUM_EMBLEM = create("chewing_gum_emblem").save();
-	public static final ItemEntry<Item> HONEYCOMB_EMBLEM = create("honeycomb_emblem").save();
-	public static final ItemEntry<Item> CRANBERRY_EMBLEM = create("cranberry_emblem").save();
-	public static final ItemEntry<Item> NESSIE_EMBLEM = create("nessie_emblem").save();
-	public static final ItemEntry<Item> SUGUARD_EMBLEM = create("suguard_emblem").save();
+	public static final ItemEntry<EmblemItem> GINGERBREAD_EMBLEM = createEmblem("gingerbread_emblem").save();
+	public static final ItemEntry<EmblemItem> JELLY_EMBLEM = createEmblem("jelly_emblem").save();
+	public static final ItemEntry<EmblemItem> SKY_EMBLEM = createEmblem("sky_emblem").save();
+	public static final ItemEntry<EmblemItem> CHEWING_GUM_EMBLEM = createEmblem("chewing_gum_emblem").save();
+	public static final ItemEntry<EmblemItem> HONEYCOMB_EMBLEM = createEmblem("honeycomb_emblem").save();
+	public static final ItemEntry<EmblemItem> CRANBERRY_EMBLEM = createEmblem("cranberry_emblem").save();
+	public static final ItemEntry<EmblemItem> NESSIE_EMBLEM = createEmblem("nessie_emblem").save();
+	public static final ItemEntry<EmblemItem> SUGUARD_EMBLEM = createEmblem("suguard_emblem").save();
 	public static final ItemEntry<ForkItem> FORK = create("fork", ForkItem::new).setProperties(new Properties().stacksTo(1).durability(200)).save();
 	
 	public static final ItemEntry<HoneycombArrowItem> HONEYCOMB_ARROW = create("honeycomb_arrow", HoneycombArrowItem::new).save();
@@ -254,6 +254,10 @@ public class CItems {
 	private static CItemBuilder<Item> createRecord(String name, ResourceKey<JukeboxSong> song) {
 		return create(name, (p) -> _recordItem(song, p))
 				.setProperties(new Properties().stacksTo(1));
+	}
+
+	private static CItemBuilder<EmblemItem> createEmblem(String name) {
+		return create(name, (p) -> new EmblemItem(name, p));
 	}
 	//工具
 	

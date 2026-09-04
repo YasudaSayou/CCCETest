@@ -15,7 +15,7 @@
   "advancements.candycraftce.fork.desc": "合成一把叉子",
   "advancements.candycraftce.honeycomb": "该认真了",
   "advancements.candycraftce.honeycomb.desc": "获得蜜蜡",
-  "advancements.candycraftce.honeycomb_sword": "糖果升级！",
+  "advancements.candycraftce.honeycomb_sword": "甜蜜升级！",
   "advancements.candycraftce.honeycomb_sword.desc": "合成一把蜜蜡剑",
   "advancements.candycraftce.jelly_shock_absorber": "降落！",
   "advancements.candycraftce.jelly_shock_absorber.desc": "将红色弹力果冻熔炼成减震果冻",
@@ -34,7 +34,7 @@
   "advancements.candycraftce.root.desc": "巨大的发现——进入糖果世界",
   "advancements.candycraftce.stall_cookie_creeper": "驯服协定…",
   "advancements.candycraftce.stall_cookie_creeper.desc": "用棒棒糖尝试驯服曲奇苦力怕",
-  "advancements.candycraftce.stick": "回到起点",
+  "advancements.candycraftce.stick": "回归本源",
   "advancements.candycraftce.stick.desc": "用棉花软糖木棍合成木棍",
   "advancements.candycraftce.sugar_block": "获得糖",
   "advancements.candycraftce.sugar_block.desc": "合成糖块",
@@ -315,5 +315,14 @@
   "item.candycraftce.white_chocolate_brick": "白巧克力砖",
   "item.candycraftce.white_chocolate_leaf": "白巧克力树叶",
   "itemGroup.candycraftce": "糖果世界社区版",
-  "jei.sugar_furnace.title": "糖熔炉"
+  "jei.sugar_furnace.title": "糖熔炉",
+  "tooltip.candycraftce.chewing_gum_emblem": "让你能在口香糖上正常行走",
+  "tooltip.candycraftce.cranberry_emblem": "黎明会治愈你",
+  "tooltip.candycraftce.emblem": "收集不同的徽章来唤醒糖果工艺的后期内容",
+  "tooltip.candycraftce.gingerbread_emblem": "姜饼村民和拐杖糖猪不再害怕你",
+  "tooltip.candycraftce.honeycomb_emblem": "5让你能偶尔听见地下结构的声音",
+  "tooltip.candycraftce.jelly_emblem": "减少30%摔落伤害",
+  "tooltip.candycraftce.sky_emblem": "防止你在天空地牢掉出世界",
+  "tooltip.candycraftce.suguard_emblem": "减少20%箭矢伤害",
+  "tooltip.candycraftce.nessie_emblem": "在水中时你会被缓慢的治疗"
 }

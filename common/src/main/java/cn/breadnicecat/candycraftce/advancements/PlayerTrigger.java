@@ -7,7 +7,7 @@ import net.minecraft.advancements.critereon.SimpleCriterionTrigger;
 import net.minecraft.server.level.ServerPlayer;
 import java.util.Optional;
 
-public class EatBlockTrigger extends SimpleCriterionTrigger<EatBlockTrigger.Instance> {
+public class PlayerTrigger extends SimpleCriterionTrigger<PlayerTrigger.Instance> {
 
 	public void trigger(ServerPlayer player) {
 		super.trigger(player, instance -> true);
