@@ -3,15 +3,9 @@
   "criteria": {
     "cookie_creeper": {
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "type": "candycraftce:cookie_creeper"
-            }
-          }
-        ]
+        "entity": {
+          "entity_type": "candycraftce:cookie_creeper"
+        }
       },
       "trigger": "minecraft:player_killed_entity"
     }
