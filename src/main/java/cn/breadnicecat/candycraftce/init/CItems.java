@@ -1,6 +1,7 @@
 package cn.breadnicecat.candycraftce.init;
 
 import cn.breadnicecat.candycraftce.CandyCraftCE;
+import cn.breadnicecat.candycraftce.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -52,4 +53,12 @@ public class CItems {
 	public static final DeferredItem<Item> RECORD_2 = ITEMS.register("record_2", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_2)));
 	public static final DeferredItem<Item> RECORD_3 = ITEMS.register("record_3", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_3)));
 	public static final DeferredItem<Item> RECORD_4 = ITEMS.register("record_4", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_4)));
+	public static final DeferredItem<Item> GINGERBREAD_EMBLEM = ITEMS.register("gingerbread_emblem", () -> new EmblemItem("gingerbread_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> JELLY_EMBLEM = ITEMS.register("jelly_emblem", () -> new EmblemItem("jelly_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> SKY_EMBLEM = ITEMS.register("sky_emblem", () -> new EmblemItem("sky_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> CHEWING_GUM_EMBLEM = ITEMS.register("chewing_gum_emblem", () -> new EmblemItem("chewing_gum_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> HONEYCOMB_EMBLEM = ITEMS.register("honeycomb_emblem", () -> new EmblemItem("honeycomb_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> CRANBERRY_EMBLEM = ITEMS.register("cranberry_emblem", () -> new EmblemItem("cranberry_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> NESSIE_EMBLEM = ITEMS.register("nessie_emblem", () -> new EmblemItem("nessie_emblem", new Item.Properties()));
+	public static final DeferredItem<Item> SUGUARD_EMBLEM = ITEMS.register("suguard_emblem", () -> new EmblemItem("suguard_emblem", new Item.Properties()));
 }

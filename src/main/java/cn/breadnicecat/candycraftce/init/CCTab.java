@@ -55,5 +55,13 @@ public class CCTab {
 			output.accept(CItems.RECORD_2);
 			output.accept(CItems.RECORD_3);
 			output.accept(CItems.RECORD_4);
+			output.accept(CItems.GINGERBREAD_EMBLEM);
+			output.accept(CItems.JELLY_EMBLEM);
+			output.accept(CItems.SKY_EMBLEM);
+			output.accept(CItems.CHEWING_GUM_EMBLEM);
+			output.accept(CItems.HONEYCOMB_EMBLEM);
+			output.accept(CItems.CRANBERRY_EMBLEM);
+			output.accept(CItems.NESSIE_EMBLEM);
+			output.accept(CItems.SUGUARD_EMBLEM);
 		}).build());
 }
