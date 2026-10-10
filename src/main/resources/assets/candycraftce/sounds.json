@@ -1,0 +1,65 @@
+{
+  "cd-1": {
+    "sounds": [
+      "candycraftce:cd-1"
+    ]
+  },
+  "cd-2": {
+    "sounds": [
+      "candycraftce:cd-2"
+    ]
+  },
+  "cd-3": {
+    "sounds": [
+      "candycraftce:cd-3"
+    ]
+  },
+  "cd-4": {
+    "sounds": [
+      "candycraftce:cd-4"
+    ]
+  },
+  "cd-o": {
+    "sounds": [
+      "candycraftce:cd-o"
+    ]
+  },
+  "gummy_ball_throw": {
+    "sounds": [
+      "random/bow"
+    ],
+    "subtitle": "subtitles.candycraftce.entity.gummy_ball_throw"
+  },
+  "jelly_break": {
+    "sounds": [
+      "candycraftce:jelly1",
+      "candycraftce:jelly2"
+    ]
+  },
+  "jelly_fall": {
+    "sounds": [
+      "candycraftce:jelly1",
+      "candycraftce:jelly2"
+    ]
+  },
+  "jelly_hit": {
+    "sounds": [
+      "candycraftce:jelly1",
+      "candycraftce:jelly2"
+    ]
+  },
+  "jelly_place": {
+    "sounds": [
+      "candycraftce:jelly1",
+      "candycraftce:jelly2"
+    ]
+  },
+  "jelly_step": {
+    "sounds": [
+      "candycraftce:jelly1",
+      "candycraftce:jelly2",
+      "candycraftce:jelly3",
+      "candycraftce:jelly4"
+    ]
+  }
+}

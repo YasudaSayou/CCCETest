@@ -47,4 +47,9 @@ public class CItems {
 	public static final DeferredItem<Item> JELLY_SENTRY_KEY = ITEMS.register("jelly_sentry_key", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
 	public static final DeferredItem<Item> JELLY_BOSS_KEY = ITEMS.register("jelly_boss_key", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
 	//public static final DeferredItem<DungeonsKeyItem> JELLY_DUNGEON_KEY = ITEMS.register("jelly_dungeon_key", () -> new DungeonsKeyItem(JELLY_DUNGEON_TELEPORTER.get(), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+	public static final DeferredItem<Item> RECORD_o = ITEMS.register("record_o", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).jukeboxPlayable(CJukeboxSongs.CD_o)));
+	public static final DeferredItem<Item> RECORD_1 = ITEMS.register("record_1", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_1)));
+	public static final DeferredItem<Item> RECORD_2 = ITEMS.register("record_2", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_2)));
+	public static final DeferredItem<Item> RECORD_3 = ITEMS.register("record_3", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_3)));
+	public static final DeferredItem<Item> RECORD_4 = ITEMS.register("record_4", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_4)));
 }
