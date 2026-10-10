@@ -1,5 +1,6 @@
 package cn.breadnicecat.candycraftce;
 
+import cn.breadnicecat.candycraftce.init.*;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -12,5 +13,7 @@ public class CandyCraftCE {
 	public static final Logger LOGGER = LogUtils.getLogger();
 
 	public CandyCraftCE(IEventBus bus, ModContainer modContainer) {
+		CItems.ITEMS.register(bus);
+		CCTab.TABS.register(bus);
 	}
 }
