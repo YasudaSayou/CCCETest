@@ -1,5 +1,6 @@
 package cn.jawbreakers.candycraftce;
 
+import cn.jawbreakers.candycraftce.init.*;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
@@ -12,5 +13,7 @@ public class CandyCraftCE {
 	public static final Logger LOGGER = LogUtils.getLogger();
 
 	public CandyCraftCE(IEventBus bus, ModContainer modContainer) {
+		CItems.ITEMS.register(bus);
+		CCTab.TABS.register(bus);
 	}
 }
