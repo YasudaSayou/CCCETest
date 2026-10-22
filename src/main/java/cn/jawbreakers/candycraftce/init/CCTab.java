@@ -13,7 +13,7 @@ public class CCTab {
 
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TAB = TABS.register("tab", () -> CreativeModeTab.builder()
 		.title(Component.translatable("mod.candycraftce"))
-		.icon(() -> new ItemStack(CItems.LICORICE.get()))
+		.icon(() -> new ItemStack(CItems.DRAGIBUS.get()))
 		.displayItems((parameters, output) -> {
 			output.accept(Items.SUGAR);
 			output.accept(CItems.LICORICE);
@@ -46,8 +46,8 @@ public class CCTab {
 			output.accept(CItems.CRANFISH);
 			output.accept(CItems.COOKED_CRANFISH);
 			output.accept(CItems.CRANFISH_SCALE);
-			//output.accept(CItems.DRAGIBUS);
-			//output.accept(CItems.LOLLIPOP_SEEDS);
+			output.accept(CItems.DRAGIBUS);
+			output.accept(CItems.LOLLIPOP_SEEDS);
 			output.accept(CItems.JELLY_SENTRY_KEY);
 			output.accept(CItems.JELLY_BOSS_KEY);
 			output.accept(CItems.RECORD_1);
@@ -62,5 +62,24 @@ public class CCTab {
 			output.accept(CItems.CRANBERRY_EMBLEM);
 			output.accept(CItems.NESSIE_EMBLEM);
 			output.accept(CItems.SUGUARD_EMBLEM);
+
+			output.accept(CBlocks.SWEET_GRASS_0);
+			output.accept(CBlocks.SWEET_GRASS_1);
+			output.accept(CBlocks.SWEET_GRASS_2);
+			output.accept(CBlocks.SWEET_GRASS_3);
+			output.accept(CBlocks.MINT);
+			output.accept(CBlocks.ROPE_RASPBERRY);
+			output.accept(CBlocks.BANANA_SEAWEED);
+			output.accept(CBlocks.FRAISE_TAGADA_FLOWER);
+			output.accept(CBlocks.GOLDEN_SUGAR_FLOWER);
+			output.accept(CBlocks.ACID_MINT_FLOWER);
+			output.accept(CBlocks.SUGAR_BLOCK);
+			output.accept(CBlocks.CARAMEL_BLOCK);
+			output.accept(CBlocks.CARAMEL_BRICKS);
+			output.accept(CBlocks.CHOCOLATE_CARAMEL_BRICKS);
+			output.accept(CBlocks.WHITE_CHOCOLATE_CARAMEL_BRICKS);
+			output.accept(CBlocks.PUDDING);
+			output.accept(CBlocks.CUSTARD_PUDDING);
+			output.accept(CBlocks.PUDDING_FARMLAND);
 		}).build());
 }

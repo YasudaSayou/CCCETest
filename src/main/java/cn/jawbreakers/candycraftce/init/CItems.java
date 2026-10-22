@@ -43,8 +43,8 @@ public class CItems {
 	public static final DeferredItem<Item> CRANFISH = ITEMS.register("cranfish", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.25F).effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 1200), 1.0F).build())));
 	public static final DeferredItem<Item> COOKED_CRANFISH = ITEMS.register("cooked_cranfish", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.5F).build())));
 	public static final DeferredItem<Item> CRANFISH_SCALE = ITEMS.register("cranfish_scale", () -> new Item(new Item.Properties()));
-	//public static final DeferredItem<Item> DRAGIBUS = ITEMS.register("dragibus", () -> new ItemNameBlockItem(CBlocks.DRAGIBUS_CROP.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.5F).build())));
-	//public static final DeferredItem<Item> LOLLIPOP_SEEDS = ITEMS.register("lollipop_seeds", () -> new ItemNameBlockItem(CBlocks.LOLLIPOP_STEM.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0F).build())));
+	public static final DeferredItem<Item> DRAGIBUS = ITEMS.register("dragibus", () -> new ItemNameBlockItem(CBlocks.DRAGIBUS_CROP.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.5F).build())));
+	public static final DeferredItem<Item> LOLLIPOP_SEEDS = ITEMS.register("lollipop_seeds", () -> new ItemNameBlockItem(CBlocks.LOLLIPOP_STEM.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationModifier(0F).build())));
 	public static final DeferredItem<Item> JELLY_SENTRY_KEY = ITEMS.register("jelly_sentry_key", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
 	public static final DeferredItem<Item> JELLY_BOSS_KEY = ITEMS.register("jelly_boss_key", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
 	public static final DeferredItem<Item> RECORD_1 = ITEMS.register("record_1", () -> new Item(new Item.Properties().stacksTo(1).jukeboxPlayable(CJukeboxSongs.CD_1)));
