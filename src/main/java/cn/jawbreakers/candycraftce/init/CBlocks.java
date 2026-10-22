@@ -2,6 +2,8 @@ package cn.jawbreakers.candycraftce.init;
 
 import cn.jawbreakers.candycraftce.CandyCraftCE;
 import cn.jawbreakers.candycraftce.block.*;
+import cn.jawbreakers.candycraftce.util.CTreeGrower;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -36,10 +38,42 @@ public class CBlocks {
 	public static final DeferredBlock<Block> PUDDING = register("pudding", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).mapColor(MapColor.WOOL).sound(CSoundTypes.JELLY)));
 	public static final DeferredBlock<Block> CUSTARD_PUDDING = register("custard_pudding", () -> new CustardPuddingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK).mapColor(MapColor.TERRACOTTA_PINK).sound(CSoundTypes.JELLY)));
 	public static final DeferredBlock<Block> PUDDING_FARMLAND = register("pudding_farmland", () -> new PuddingFarmBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FARMLAND).sound(CSoundTypes.JELLY)));
+	public static final DeferredBlock<Block> ICE_CREAM = register("ice_cream", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK)));
+	public static final DeferredBlock<Block> MINT_ICE_CREAM = register("mint_ice_cream", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).mapColor(MapColor.GLOW_LICHEN)));
+	public static final DeferredBlock<Block> STRAWBERRY_ICE_CREAM = register("strawberry_ice_cream", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_PINK)));
+	public static final DeferredBlock<Block> BLUEBERRY_ICE_CREAM = register("blueberry_ice_cream", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_BLUE)));
+	public static final DeferredBlock<Block> MINT_BLOCK = register("mint_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN)));
+	public static final DeferredBlock<Block> RASPBERRY_BLOCK = register("raspberry_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK).mapColor(MapColor.COLOR_MAGENTA)));
+	public static final DeferredBlock<Block> BANANA_SEAWEEDS_BLOCK = register("banana_seaweeds_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.HAY_BLOCK)));
+	public static final DeferredBlock<Block> COTTON_CANDY_BLOCK = register("cotton_candy_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.PINK_WOOL)));
+	public static final DeferredBlock<Block> CANDIED_CHERRY_SACK = register("candied_cherry_sack", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL)));
+	public static final DeferredBlock<Block> CHEWING_GUM_BLOCK = register("chewing_gum_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK).mapColor(MapColor.COLOR_PURPLE)));
+	public static final DeferredBlock<Block> CHOCOLATE_SAPLING = register("chocolate_sapling", () -> new CandySaplingBlock(CTreeGrower.CHOCOLATE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+	public static final DeferredBlock<Block> WHITE_CHOCOLATE_SAPLING = register("white_chocolate_sapling", () -> new CandySaplingBlock(CTreeGrower.WHITE_CHOCOLATE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+	public static final DeferredBlock<Block> CARAMEL_SAPLING = register("caramel_sapling", () -> new CandySaplingBlock(CTreeGrower.CARAMEL, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+	public static final DeferredBlock<Block> CANDIED_CHERRY_SAPLING = register("candied_cherry_sapling", () -> new CandySaplingBlock(CTreeGrower.CANDIED_CHERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+	public static final DeferredBlock<Block> MARSHMALLOW_LOG = register("marshmallow_log", () -> new RotatedPillarBlock(logProperties(MapColor.COLOR_PINK, MapColor.TERRACOTTA_PINK)));
+	public static final DeferredBlock<Block> DARK_MARSHMALLOW_LOG = register("dark_marshmallow_log", () -> new RotatedPillarBlock(logProperties(MapColor.COLOR_RED, MapColor.PODZOL)));
+	public static final DeferredBlock<Block> LIGHT_MARSHMALLOW_LOG = register("light_marshmallow_log", () -> new RotatedPillarBlock(logProperties(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_PINK)));
+	public static final DeferredBlock<Block> STRIPPED_MARSHMALLOW_LOG = register("stripped_marshmallow_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).mapColor(MapColor.COLOR_PINK)));
+	public static final DeferredBlock<Block> STRIPPED_DARK_MARSHMALLOW_LOG = register("stripped_dark_marshmallow_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).mapColor(MapColor.COLOR_RED)));
+	public static final DeferredBlock<Block> STRIPPED_LIGHT_MARSHMALLOW_LOG = register("stripped_light_marshmallow_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).mapColor(MapColor.TERRACOTTA_WHITE)));
+	public static final DeferredBlock<Block> MARSHMALLOW_PLANKS = register("marshmallow_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_PINK)));
+	public static final DeferredBlock<Block> DARK_MARSHMALLOW_PLANKS = register("dark_marshmallow_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_RED)));
+	public static final DeferredBlock<Block> LIGHT_MARSHMALLOW_PLANKS = register("light_marshmallow_planks", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).mapColor(MapColor.TERRACOTTA_WHITE)));
+	public static final DeferredBlock<Block> CHOCOLATE_LEAVES = register("chocolate_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+	public static final DeferredBlock<Block> WHITE_CHOCOLATE_LEAVES = register("white_chocolate_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+	public static final DeferredBlock<Block> CARAMEL_LEAVES = register("caramel_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+	public static final DeferredBlock<Block> CANDIED_CHERRY_LEAVES = register("candied_cherry_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+	public static final DeferredBlock<Block> MAGICAL_LEAVES = register("magical_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
 
 	public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block) {
 		DeferredBlock<T> ret = BLOCKS.register(name, block);
 		CItems.ITEMS.register(name, () -> new BlockItem(ret.get(), new Item.Properties()));
 		return ret;
+	}
+
+	private static BlockBehaviour.Properties logProperties(MapColor top, MapColor side) {
+		return BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).mapColor(state -> state.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? top : side);
 	}
 }

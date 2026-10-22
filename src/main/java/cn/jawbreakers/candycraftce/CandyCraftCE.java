@@ -20,6 +20,7 @@ public class CandyCraftCE {
 		CBlocks.BLOCKS.register(bus);
 		CSounds.SOUNDS.register(bus);
 		CCTab.TABS.register(bus);
+		CFeatureModifiers.FOLIAGE_PLACERS.register(bus);
 	}
 
 	public static ResourceLocation prefix(String name) {
