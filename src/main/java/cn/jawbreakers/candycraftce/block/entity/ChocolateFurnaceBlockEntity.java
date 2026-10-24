@@ -6,9 +6,12 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class ChocolateFurnaceBlockEntity extends LicoriceFurnaceBlockEntity {
+public class ChocolateFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
 	public ChocolateFurnaceBlockEntity(BlockPos pos, BlockState state) {
 		super(CBlockEntities.CHOCOLATE_FURNACE.get(), pos, state, CRecipes.SUGAR_SMELTING_RECIPE.get());
 	}
@@ -16,6 +19,16 @@ public class ChocolateFurnaceBlockEntity extends LicoriceFurnaceBlockEntity {
 	@Override
 	protected Component getDefaultName() {
 		return Component.translatable(this.getBlockState().getBlock().getDescriptionId());
+	}
+
+	@Override
+	protected int getBurnDuration(ItemStack fuel) {
+		return fuel.is(Items.SUGAR) ? 300 : super.getBurnDuration(fuel);
+	}
+
+	@Override
+	public boolean canPlaceItem(int index, ItemStack stack) {
+		return index != 2 && (index != 1 || stack.is(Items.SUGAR));
 	}
 
 	@Override
