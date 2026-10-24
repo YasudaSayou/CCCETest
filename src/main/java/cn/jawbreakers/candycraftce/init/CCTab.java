@@ -135,5 +135,9 @@ public class CCTab {
 			output.accept(CBlocks.HONEYCOMB_BLOCK);
 			output.accept(CBlocks.HONEYCOMB_LAMP);
 			output.accept(CBlocks.PEZ_BLOCK);
+			output.accept(CBlocks.MARSHMALLOW_CRAFTING_TABLE);
+			output.accept(CBlocks.LICORICE_FURNACE);
+			output.accept(CBlocks.CHOCOLATE_FURNACE);
+			output.accept(CBlocks.WHITE_CHOCOLATE_FURNACE);
 		}).build());
 }

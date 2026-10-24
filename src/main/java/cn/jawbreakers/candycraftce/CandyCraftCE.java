@@ -18,8 +18,12 @@ public class CandyCraftCE {
 	public CandyCraftCE(IEventBus bus, ModContainer modContainer) {
 		CItems.ITEMS.register(bus);
 		CBlocks.BLOCKS.register(bus);
+		CBlockEntities.BLOCK_ENTITIES.register(bus);
 		CSounds.SOUNDS.register(bus);
 		CCTab.TABS.register(bus);
+		CMenus.MENUS.register(bus);
+		CRecipes.RECIPE_SERIALIZERS.register(bus);
+		CRecipes.RECIPE_TYPES.register(bus);
 		CFeatureModifiers.FOLIAGE_PLACERS.register(bus);
 	}
 
