@@ -15,7 +15,7 @@ public class ChocolateFurnaceBlockEntity extends LicoriceFurnaceBlockEntity {
 
 	@Override
 	protected Component getDefaultName() {
-		return Component.translatable(this.getDescriptionId());
+		return Component.translatable(this.getBlockState().getBlock().getDescriptionId());
 	}
 
 	@Override
