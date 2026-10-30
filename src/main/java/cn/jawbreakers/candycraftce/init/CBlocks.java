@@ -150,6 +150,10 @@ public class CBlocks {
 	public static final DeferredBlock<Block> COTTON_CANDY_WEB = register("cotton_candy_web", () -> new WebBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBWEB).mapColor(MapColor.COLOR_PINK)));
 	public static final DeferredBlock<Block> CHEWING_GUM_PUDDLE = register("chewing_gum_puddle", () -> new ChewingGumPuddleBlock(BlockBehaviour.Properties.ofFullCopy(CHEWING_GUM_BLOCK.get()).noCollission()));
 	public static final DeferredBlock<Block> MARSHMALLOW_LADDER = register("marshmallow_ladder", () -> new LadderBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LADDER).mapColor(MapColor.COLOR_PINK)));
+	public static final DeferredBlock<Block> TRAMPOJELLY = register("trampojelly", () -> new JellyBlock(2.0D, BlockBehaviour.Properties.ofFullCopy(Blocks.SLIME_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).strength(3.0F, 2000.0F)));
+	public static final DeferredBlock<Block> RED_TRAMPOJELLY = register("red_trampojelly", () -> new JellyBlock(4.0D, BlockBehaviour.Properties.ofFullCopy(TRAMPOJELLY.get()).mapColor(MapColor.COLOR_RED)));
+	public static final DeferredBlock<Block> SOFT_TRAMPOJELLY = register("soft_trampojelly", () -> new JellyBlock(2.0D, BlockBehaviour.Properties.ofFullCopy(TRAMPOJELLY.get()).mapColor(MapColor.COLOR_PURPLE)));
+	public static final DeferredBlock<Block> JELLY_SHOCK_ABSORBER = register("jelly_shock_absorber", () -> new JellyBlock(-1.0D, BlockBehaviour.Properties.ofFullCopy(TRAMPOJELLY.get()).mapColor(MapColor.COLOR_BLUE)));
 
 	public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block) {
 		DeferredBlock<T> ret = BLOCKS.register(name, block);

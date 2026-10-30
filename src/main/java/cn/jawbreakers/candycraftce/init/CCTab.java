@@ -190,5 +190,9 @@ public class CCTab {
 			output.accept(CBlocks.COTTON_CANDY_WEB);
 			output.accept(CBlocks.CHEWING_GUM_PUDDLE);
 			output.accept(CBlocks.MARSHMALLOW_LADDER);
+			output.accept(CBlocks.TRAMPOJELLY);
+			output.accept(CBlocks.RED_TRAMPOJELLY);
+			output.accept(CBlocks.SOFT_TRAMPOJELLY);
+			output.accept(CBlocks.JELLY_SHOCK_ABSORBER);
 		}).build());
 }
