@@ -187,5 +187,8 @@ public class CCTab {
 			output.accept(CBlocks.MARSHMALLOW_FENCE_GATE);
 			output.accept(CBlocks.DARK_MARSHMALLOW_FENCE_GATE);
 			output.accept(CBlocks.LIGHT_MARSHMALLOW_FENCE_GATE);
+			output.accept(CBlocks.COTTON_CANDY_WEB);
+			output.accept(CBlocks.CHEWING_GUM_PUDDLE);
+			output.accept(CBlocks.MARSHMALLOW_LADDER);
 		}).build());
 }
