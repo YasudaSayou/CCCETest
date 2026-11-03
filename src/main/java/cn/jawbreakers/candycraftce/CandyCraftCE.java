@@ -17,6 +17,7 @@ public class CandyCraftCE {
 
 	public CandyCraftCE(IEventBus bus, ModContainer modContainer) {
 		CItems.ITEMS.register(bus);
+		CBlocks.BLOCKS.register(bus);
 		CSounds.SOUNDS.register(bus);
 		CCTab.TABS.register(bus);
 	}
