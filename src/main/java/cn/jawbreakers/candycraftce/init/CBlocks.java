@@ -93,6 +93,10 @@ public class CBlocks {
 	public static final DeferredBlock<Block> HONEYCOMB_BLOCK = register("honeycomb_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_YELLOW)));
 	public static final DeferredBlock<Block> HONEYCOMB_LAMP = register("honeycomb_lamp", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GLOWSTONE).mapColor(MapColor.COLOR_YELLOW)));
 	public static final DeferredBlock<Block> PEZ_BLOCK = register("pez_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.METAL)));
+	public static final DeferredBlock<Block> MARSHMALLOW_CRAFTING_TABLE = register("marshmallow_crafting_table", () -> new MarshmallowCraftingTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).mapColor(MapColor.COLOR_PINK)));
+	public static final DeferredBlock<Block> LICORICE_FURNACE = register("licorice_furnace", () -> new LicoriceFurnaceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).mapColor(MapColor.COLOR_BLACK)));
+	public static final DeferredBlock<Block> CHOCOLATE_FURNACE = register("chocolate_furnace", () -> new ChocolateFurnaceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).mapColor(MapColor.TERRACOTTA_BROWN)));
+	public static final DeferredBlock<Block> WHITE_CHOCOLATE_FURNACE = register("white_chocolate_furnace", () -> new ChocolateFurnaceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.FURNACE).mapColor(MapColor.TERRACOTTA_WHITE)));
 
 	public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block) {
 		DeferredBlock<T> ret = BLOCKS.register(name, block);
