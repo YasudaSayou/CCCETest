@@ -187,5 +187,24 @@ public class CCTab {
 			output.accept(CBlocks.MARSHMALLOW_FENCE_GATE);
 			output.accept(CBlocks.DARK_MARSHMALLOW_FENCE_GATE);
 			output.accept(CBlocks.LIGHT_MARSHMALLOW_FENCE_GATE);
+			output.accept(CBlocks.COTTON_CANDY_WEB);
+			output.accept(CBlocks.CHEWING_GUM_PUDDLE);
+			output.accept(CBlocks.MARSHMALLOW_LADDER);
+			output.accept(CBlocks.TRAMPOJELLY);
+			output.accept(CBlocks.RED_TRAMPOJELLY);
+			output.accept(CBlocks.SOFT_TRAMPOJELLY);
+			output.accept(CBlocks.JELLY_SHOCK_ABSORBER);
+			output.accept(CBlocks.SUGAR_SPIKES);
+			output.accept(CBlocks.CRANBERRY_SPIKES);
+			output.accept(CBlocks.GRENADINE_ICE);
+			output.accept(CBlocks.CARAMEL_GLASS);
+			output.accept(CBlocks.CARAMEL_GLASS_ROUND);
+			output.accept(CBlocks.CARAMEL_GLASS_DIAMOND);
+			output.accept(CBlocks.CARAMEL_GLASS_PANE);
+			output.accept(CBlocks.CARAMEL_GLASS_ROUND_PANE);
+			output.accept(CBlocks.CARAMEL_GLASS_DIAMOND_PANE);
+			output.accept(CBlocks.JAWBREAKER_BRICKS);
+			output.accept(CBlocks.JAWBREAKER_LIGHT);
+			output.accept(CBlocks.HONEYCOMB_TORCH);
 		}).build());
 }
