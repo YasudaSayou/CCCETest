@@ -62,6 +62,8 @@ public class CCTab {
 			output.accept(CItems.CRANBERRY_EMBLEM);
 			output.accept(CItems.NESSIE_EMBLEM);
 			output.accept(CItems.SUGUARD_EMBLEM);
+			output.accept(CItems.GRENADINE_BUCKET);
+			output.accept(CItems.CARAMEL_BUCKET);
 
 			output.accept(CBlocks.SWEET_GRASS_0);
 			output.accept(CBlocks.SWEET_GRASS_1);

@@ -19,6 +19,8 @@ public class CandyCraftCE {
 		CItems.ITEMS.register(bus);
 		CBlocks.BLOCKS.register(bus);
 		CBlockEntities.BLOCK_ENTITIES.register(bus);
+		CFluids.FLUIDS.register(bus);
+		CFluidTypes.FLUID_TYPES.register(bus);
 		CSounds.SOUNDS.register(bus);
 		CCTab.TABS.register(bus);
 		CMenus.MENUS.register(bus);
