@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/grass_block",
+  "render_type": "minecraft:cutout_mipped",
   "textures": {
     "bottom": "candycraftce:block/pudding",
     "overlay": "candycraftce:block/custard_pudding_side_overlay",

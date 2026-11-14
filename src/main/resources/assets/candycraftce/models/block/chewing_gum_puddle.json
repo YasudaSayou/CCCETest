@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:cutout",
   "textures": {
     "all": "candycraftce:block/chewing_gum_puddle",
     "particle": "#all"
