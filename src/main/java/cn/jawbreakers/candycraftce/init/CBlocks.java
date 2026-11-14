@@ -168,6 +168,8 @@ public class CBlocks {
 	public static final DeferredBlock<Block> JAWBREAKER_LIGHT = register("jawbreaker_light", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BEDROCK).lightLevel(state -> 15)));
 	public static final DeferredBlock<Block> HONEYCOMB_TORCH = registerTorchBlockItem("honeycomb_torch", () -> new TorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.ofFullCopy(Blocks.TORCH)));
 	public static final DeferredBlock<Block> WALL_HONEYCOMB_TORCH = BLOCKS.register("wall_honeycomb_torch", () -> new WallTorchBlock(ParticleTypes.FLAME, BlockBehaviour.Properties.ofFullCopy(Blocks.WALL_TORCH).lootFrom(HONEYCOMB_TORCH)));
+	public static final DeferredBlock<LiquidBlock> CARAMEL = BLOCKS.register("caramel", () -> new LiquidBlock(CFluids.CARAMEL.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).mapColor(MapColor.COLOR_BROWN)));
+	public static final DeferredBlock<LiquidBlock> GRENADINE = BLOCKS.register("grenadine", () -> new LiquidBlock(CFluids.GRENADINE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).mapColor(MapColor.COLOR_RED)));
 
 	public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block) {
 		DeferredBlock<T> ret = BLOCKS.register(name, block);
