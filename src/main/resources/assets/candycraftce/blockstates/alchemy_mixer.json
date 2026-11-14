@@ -1,0 +1,17 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "candycraftce:block/alchemy_mixer"
+      }
+    },
+    {
+      "apply": {
+        "model": "candycraftce:block/alchemy_mixer_liquid"
+      },
+      "when": {
+        "full": "true"
+      }
+    }
+  ]
+}
