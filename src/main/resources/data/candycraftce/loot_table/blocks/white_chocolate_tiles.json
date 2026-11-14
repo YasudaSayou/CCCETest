@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "candycraftce:white_chocolate_stone_tile"
+          "name": "candycraftce:white_chocolate_tiles"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "candycraftce:blocks/white_chocolate_stone_tile"
+  "random_sequence": "candycraftce:blocks/white_chocolate_tiles"
 }
