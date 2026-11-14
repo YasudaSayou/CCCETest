@@ -50,5 +50,9 @@ public class CCTab {
 			//output.accept(CItems.LOLLIPOP_SEEDS);
 			output.accept(CItems.JELLY_SENTRY_KEY);
 			output.accept(CItems.JELLY_BOSS_KEY);
+			output.accept(CItems.RECORD_1);
+			output.accept(CItems.RECORD_2);
+			output.accept(CItems.RECORD_3);
+			output.accept(CItems.RECORD_4);
 		}).build());
 }
