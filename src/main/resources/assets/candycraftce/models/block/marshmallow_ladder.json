@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/ladder",
+  "render_type": "minecraft:cutout",
   "textures": {
     "particle": "candycraftce:block/marshmallow_ladder",
     "texture": "candycraftce:block/marshmallow_ladder"

@@ -157,7 +157,7 @@ public class CBlocks {
 	public static final DeferredBlock<Block> JELLY_SHOCK_ABSORBER = register("jelly_shock_absorber", () -> new JellyBlock(-1.0D, BlockBehaviour.Properties.ofFullCopy(TRAMPOJELLY.get()).mapColor(MapColor.COLOR_BLUE)));
 	public static final DeferredBlock<Block> SUGAR_SPIKES = register("sugar_spikes", () -> new SpikesBlock(1.0F, BlockBehaviour.Properties.ofFullCopy(PEZ_BLOCK.get()).noCollission()));
 	public static final DeferredBlock<Block> CRANBERRY_SPIKES = register("cranberry_spikes", () -> new SpikesBlock(2.0F, BlockBehaviour.Properties.ofFullCopy(SUGAR_SPIKES.get()).mapColor(MapColor.COLOR_PINK)));
-	public static final DeferredBlock<Block> GRENADINE_ICE = register("grenadine_ice", () -> new HalfTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_ICE).mapColor(MapColor.COLOR_RED)));
+	public static final DeferredBlock<Block> GRENADINE_ICE = register("grenadine_ice", () -> new HalfTransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_ICE).mapColor(MapColor.COLOR_RED).noOcclusion()));
 	public static final DeferredBlock<Block> CARAMEL_GLASS = register("caramel_glass", () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(MapColor.COLOR_ORANGE)));
 	public static final DeferredBlock<Block> CARAMEL_GLASS_ROUND = register("caramel_glass_round", () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(MapColor.COLOR_ORANGE)));
 	public static final DeferredBlock<Block> CARAMEL_GLASS_DIAMOND = register("caramel_glass_diamond", () -> new TransparentBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).mapColor(MapColor.COLOR_ORANGE)));
