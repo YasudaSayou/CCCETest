@@ -59,4 +59,6 @@ public class CItems {
 	public static final DeferredItem<Item> CRANBERRY_EMBLEM = ITEMS.register("cranberry_emblem", () -> new EmblemItem("cranberry_emblem", new Item.Properties().stacksTo(1)));
 	public static final DeferredItem<Item> NESSIE_EMBLEM = ITEMS.register("nessie_emblem", () -> new EmblemItem("nessie_emblem", new Item.Properties().stacksTo(1)));
 	public static final DeferredItem<Item> SUGUARD_EMBLEM = ITEMS.register("suguard_emblem", () -> new EmblemItem("suguard_emblem", new Item.Properties().stacksTo(1)));
+	public static final DeferredItem<Item> GRENADINE_BUCKET = ITEMS.register("grenadine_bucket", () -> new BucketItem(CFluids.GRENADINE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+	public static final DeferredItem<Item> CARAMEL_BUCKET = ITEMS.register("caramel_bucket", () -> new BucketItem(CFluids.CARAMEL.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 }
