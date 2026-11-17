@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Block;
 
 public class CTags {
 	public static final TagKey<Block> PUDDING = blockTag("pudding");
+	public static final TagKey<Block> SUGAR_GROWABLES = blockTag("sugar_growables");
 
 	public static final TagKey<Item> MARSHMALLOW_PLANKS = itemTag("marshmallow_planks");
 

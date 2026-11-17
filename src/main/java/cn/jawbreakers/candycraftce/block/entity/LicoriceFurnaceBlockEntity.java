@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
 
 public class LicoriceFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
 	public LicoriceFurnaceBlockEntity(BlockPos pos, BlockState state) {
@@ -23,12 +24,14 @@ public class LicoriceFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
 
 	@Override
 	protected int getBurnDuration(ItemStack fuel) {
-		return fuel.is(Items.SUGAR) ? 300 : super.getBurnDuration(fuel);
+		if (fuel.isEmpty()) return 0;
+		FurnaceFuel fuelData = fuel.getItemHolder().getData(CDataMaps.SUGAR_FURNACE_FUELS);
+		return fuelData != null ? fuelData.burnTime() : 0;
 	}
 
 	@Override
 	public boolean canPlaceItem(int index, ItemStack stack) {
-		return index != 2 && (index != 1 || stack.is(Items.SUGAR));
+		return index != 2 && (index != 1 || stack.getItemHolder().getData(CDataMaps.SUGAR_FURNACE_FUELS) != null);
 	}
 
 	@Override

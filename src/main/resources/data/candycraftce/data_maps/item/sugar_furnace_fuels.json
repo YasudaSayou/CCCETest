@@ -1,0 +1,10 @@
+{
+  "values": {
+    "minecraft:sugar": {
+      "burn_time": 300
+    },
+    "candycraftce:sugar_block": {
+      "burn_time": 27000
+    }
+  }
+}

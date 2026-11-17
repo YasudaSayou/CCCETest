@@ -3,6 +3,9 @@ package cn.jawbreakers.candycraftce.block;
 import cn.jawbreakers.candycraftce.init.CBlocks;
 import cn.jawbreakers.candycraftce.util.CTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.FluidTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.SeagrassBlock;
@@ -20,6 +23,14 @@ public class CandyWaterPlantBlock extends SeagrassBlock {
 
 	@Override
 	public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
-		return false;
+		return state.is(CBlocks.ROPE_RASPBERRY.get());
+	}
+
+	@Override
+	public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
+		BlockPos above = pos.above();
+		if (level.getFluidState(above).is(FluidTags.WATER)) {
+			level.setBlockAndUpdate(above, CBlocks.ROPE_RASPBERRY.get().defaultBlockState());
+		}
 	}
 }

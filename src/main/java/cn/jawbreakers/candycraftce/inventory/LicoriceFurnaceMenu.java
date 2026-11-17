@@ -20,6 +20,6 @@ public class LicoriceFurnaceMenu extends AbstractFurnaceMenu {
 
 	@Override
 	protected boolean isFuel(ItemStack stack) {
-		return stack.is(Items.SUGAR);
+		return stack.getItemHolder().getData(CDataMaps.SUGAR_FURNACE_FUELS) != null;
 	}
 }

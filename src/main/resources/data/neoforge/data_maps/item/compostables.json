@@ -1,0 +1,97 @@
+{
+  "values": {
+    "candycraftce:acid_mint_flower": {
+      "chance": 0.65
+    },
+    "candycraftce:banana_seaweed": {
+      "chance": 0.3
+    },
+    "candycraftce:banana_seaweeds_block": {
+      "chance": 0.5
+    },
+    "candycraftce:candied_cherry": {
+      "chance": 0.65
+    },
+    "candycraftce:candied_cherry_leaf": {
+      "chance": 0.3
+    },
+    "candycraftce:candied_cherry_leaves": {
+      "chance": 0.3
+    },
+    "candycraftce:candied_cherry_sack": {
+      "chance": 0.5
+    },
+    "candycraftce:candied_cherry_sapling": {
+      "chance": 0.5
+    },
+    "candycraftce:caramel_leaf": {
+      "chance": 0.3
+    },
+    "candycraftce:caramel_leaves": {
+      "chance": 0.3
+    },
+    "candycraftce:caramel_sapling": {
+      "chance": 0.3
+    },
+    "candycraftce:chocolate_leaf": {
+      "chance": 0.3
+    },
+    "candycraftce:chocolate_leaves": {
+      "chance": 0.3
+    },
+    "candycraftce:chocolate_sapling": {
+      "chance": 0.3
+    },
+    "candycraftce:dragibus": {
+      "chance": 0.3
+    },
+    "candycraftce:fraise_tagada_flower": {
+      "chance": 0.65
+    },
+    "candycraftce:golden_sugar_flower": {
+      "chance": 0.65
+    },
+    "candycraftce:lollipop_seeds": {
+      "chance": 0.3
+    },
+    "candycraftce:magical_leaf": {
+      "chance": 0.3
+    },
+    "candycraftce:magical_leaves": {
+      "chance": 0.3
+    },
+    "candycraftce:mint": {
+      "chance": 0.3
+    },
+    "candycraftce:mint_block": {
+      "chance": 0.5
+    },
+    "candycraftce:raspberry_block": {
+      "chance": 0.5
+    },
+    "candycraftce:rope_raspberry": {
+      "chance": 0.3
+    },
+    "candycraftce:sweet_grass_0": {
+      "chance": 0.3
+    },
+    "candycraftce:sweet_grass_1": {
+      "chance": 0.3
+    },
+    "candycraftce:sweet_grass_2": {
+      "chance": 0.3
+    },
+    "candycraftce:sweet_grass_3": {
+      "chance": 0.3
+    },
+    "candycraftce:white_chocolate_leaf": {
+      "chance": 0.3
+    },
+    "candycraftce:white_chocolate_leaves": {
+      "chance": 0.3
+    },
+    "candycraftce:white_chocolate_sapling": {
+      "chance": 0.3
+    }
+  }
+}
